@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <EditText
+        android:id="@+id/search_field"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/result_list"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Digite seu destino"
+        android:inputType="textPersonName"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result_list"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="21dp"
+        android:text="Buscar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/result_list"
+        android:layout_width="360dp"
+        android:layout_height="829dp"
+        android:layout_below="@+id/search_field"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="48dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:listitem="@layout/list_layout"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
